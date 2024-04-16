@@ -1,0 +1,52 @@
+version: "3.9"
+services:
+  web:
+    image: odoo:17.0
+    depends_on:
+      - db
+    ports:
+      - "8069:8069"
+      - "5678:5678" # for debugging purposes (remote debugger)
+    volumes:
+      - odoo-web-data:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./extra-addons:/mnt/extra-addons
+    environment:
+      ODOO_DEBUG: "True"  # Cho phép chế độ debug
+    env_file:
+      - env/odoo.env
+    command: ["--dev", "all"]
+    stdin_open: true
+    tty: true
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+
+  db:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    env_file:
+      - env/postgresql.env
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data
+    restart: on-failure
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=user@domain.com
+      - PGADMIN_DEFAULT_PASSWORD=catsarecool
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    depends_on:
+      - db
+
+volumes:
+  odoo-web-data:
+  odoo-db-data:
+  pgadmin-data:

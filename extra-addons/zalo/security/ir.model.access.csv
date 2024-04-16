@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+zalo.access_zalo_zalo,zalo_managers,zalo.model_zalo_zalo,zalo_groups_managers,1,1,1,1
+zalo.access_zalo_users,zalo_zalo,zalo.model_zalo_users,zalo_groups_zalo,1,1,1,0
