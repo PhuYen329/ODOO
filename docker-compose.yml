@@ -15,7 +15,7 @@ services:
       ODOO_DEBUG: "True"  # Cho phép chế độ debug
     env_file:
       - env/odoo.env
-    command: ["--dev", "all"]
+    command:  ["--dev", "all", "--log-level=debug"]
     stdin_open: true
     tty: true
     cap_add:
