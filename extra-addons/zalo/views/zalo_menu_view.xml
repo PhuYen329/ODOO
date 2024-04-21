@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
+        <!-- hành động -->
 
+        <!-- hiển thị -->
         <record id="zalo_users_action" model="ir.actions.act_window">
-            <field name="name">zalo</field>
-            <field name="res_model">zalo.zalo</field>
-            <field name="view_mode">tree,form</field>
-        </record>
+			<field name="name">zalo</field>
+			<field name="res_model">zalo.zalo</field>
+			<field name="view_mode">tree</field>
+		</record>
+        <!-- menu -->
 		<menuitem id="zalo_menu" name="zalo" sequence="4" />
 		<menuitem id="zalo_manager_menu" name="manager" action="zalo_users_action" parent="zalo_menu" />
 		<menuitem id="zalo_users_menu" name="zalo" action="zalo_users_action" parent="zalo_menu" />

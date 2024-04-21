@@ -1,0 +1,12 @@
+<logger name="xml_error">
+    <level>ERROR</level>
+    <handlers>
+        <handler class="FileHandler" filename="/var/log/xml_error.log">
+            <level>ERROR</level>
+            <formatter>
+                <format>%{(asctime)s [%(levelname)s] %(name)s: %(message)s</format>
+            </formatter>
+        </handler>
+    </handlers>
+</logger>
+<!-- <log message="Lỗi XML: {e}" level="error" logger="xml_error"/> -->

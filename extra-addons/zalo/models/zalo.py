@@ -5,6 +5,7 @@ from odoo.exceptions import UserError, ValidationError
 
 class zalo(models.Model):
     _name = "zalo.zalo"
+    # _inherit = "res.partner"
     _description = "zalo.zalo"
 
     zalo_id = fields.Integer(string="zalo_id")
