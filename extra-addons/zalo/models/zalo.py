@@ -7,8 +7,10 @@ class zalo(models.Model):
     _name = "zalo.zalo"
     _description = "zalo.zalo"
 
-    zalo_id = fields.Integer(string="zalo_id")
-
+    zalo_id = fields.Char(string="Zalo ID")
+    secret_id=fields.Char(string='Secret Id') 
+    app_id = fields.Char(string="App ID")
+    access_token=fields.Char(string='access_token') 
 
 #     @api.depends('value')
 #     def _value_pc(self):

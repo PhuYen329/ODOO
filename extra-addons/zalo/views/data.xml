@@ -1,0 +1,9 @@
+<odoo>
+	<data>
+    <record id="category_zalo" model="ir.module.category">
+    <field name="name">Zalo</field>
+    <field name="description">Zalo Chat Module</field>
+    <field name="sequence">8</field>
+</record>
+	</data>
+</odoo>

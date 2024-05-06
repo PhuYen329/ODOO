@@ -11,8 +11,9 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./extra-addons:/mnt/extra-addons
-    environment:
-      ODOO_DEBUG: "True"  # Cho phép chế độ debug
+      - ./vscode:/root/.vscode
+    # environment:
+    #   ODOO_DEBUG: "True"  # Cho phép chế độ debug
     env_file:
       - env/odoo.env
     command:  ["--dev", "all", "--log-level=debug"]
