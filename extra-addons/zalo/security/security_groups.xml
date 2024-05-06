@@ -3,17 +3,25 @@
 	<data>
 		<record id="module_category_zalo" model="ir.module.category">
 			<field name="name">Zalo Managers</field>
+			<field name="sequence">8</field>
+		</record>
+		<record id="module_zalo_category_user" model="ir.module.category">
+			<field name="name">Zalo Managers</field>
+			<field name="parent_id" ref="module_category_zalo" />
 			<field name="description">Category zalo</field>
 			<field name="sequence">8</field>
 		</record>
-		<record id="zalo_groups_managers" model="res.groups">
-			<field name="name">Manager</field>
-			<field name="category_id" ref="module_category_zalo" />
-			<!-- <field name="implied_ids" eval="[(4,ref('zalo_zalo'))]" /> -->
-		</record>
 		<record id="zalo_groups_zalo" model="res.groups">
 			<field name="name">Zalo</field>
-			<field name="category_id" ref="module_category_zalo" />
+			<field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+			<field name="category_id" ref="module_zalo_category_user" />
+		</record>
+		<record id="zalo_groups_managers" model="res.groups">
+			<field name="name">Manager</field>
+			<field name="implied_ids" eval="[(4, ref('zalo_groups_zalo'))]" />
+			<field name="category_id" ref="module_zalo_category_user" />
+			<field name="users" eval="[(4, ref('base.user_root')),(4, ref('base.user_admin'))]" />
+			<field name="comment">Users belong to this group can control this application</field>
 		</record>
 	</data>
 </odoo>

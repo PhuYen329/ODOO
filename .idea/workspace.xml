@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54ec5696-ae9e-42af-8c04-2fda73cbc3f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/extra-addons/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra-addons/zalo/models/adapter/zalo_apdapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra-addons/zalo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra-addons/zalo/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra-addons/zalo/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo/models/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra-addons/zalo/models/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo/models/zalo.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra-addons/zalo/models/zalo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo/security/security_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/extra-addons/zalo/security/security_groups.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo/views/zalo_menu_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/__manifest__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/controllers/controllers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/demo/demo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/models/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/security/ir.model.access.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/views/templates.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra-addons/zalo_test/views/views.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/extra-addons/zalo/adapter/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/extra-addons/zalo/controllers/zalo_controller.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/extra-addons/zalo/models/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/extra-addons/zalo/models/get_users_oa.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/extra-addons/zalo/models/phones.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/extra-addons/zalo/models/settings.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/extra-addons/zalo/models/zalo.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2fwRVa0rjKdNPDCyhpmEfnXUJFm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.odoo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/OneDrive/Máy tính/ERP_Tek/docker-compose.yml&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\OneDrive\Máy tính\ERP_Tek\extra-addons\zalo" />
+      <recent name="C:\Users\Administrator\OneDrive\Máy tính\ERP_Tek\extra-addons\zalo\models" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="odoo" type="docker-deploy" factoryName="docker-compose.yml" editBeforeRun="true" focusToolWindowBeforeRun="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="web" />
+              <option value="db" />
+              <option value="pgadmin" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" browser="37cae5b9-e8b2-4949-9172-aafa37fbc09c" url="localhost:8069" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54ec5696-ae9e-42af-8c04-2fda73cbc3f3" name="Changes" comment="" />
+      <created>1714710204174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714710204174</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="file debug" />
+    <MESSAGE value="&#10;&#10;@api.model&#10;def set_values(self):&#10;    ICP=self.env['ir.config_parameter'].sudo()&#10;    ICP.set_param('zalo.app_id',self.app_id)&#10;    super(ResConfigSettings,self).set_values()&#10;&#10;@api.model&#10;def get_values(self):&#10;    ICP = self.env[&quot;ir.config_parameter&quot;].sudo()&#10;    res = super(ResConfigSettings, self).get_values()&#10;    res['app_id']=ICP.get_param('zalo.app_id', default='')" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;&#10;@api.model&#10;def set_values(self):&#10;    ICP=self.env['ir.config_parameter'].sudo()&#10;    ICP.set_param('zalo.app_id',self.app_id)&#10;    super(ResConfigSettings,self).set_values()&#10;&#10;@api.model&#10;def get_values(self):&#10;    ICP = self.env[&quot;ir.config_parameter&quot;].sudo()&#10;    res = super(ResConfigSettings, self).get_values()&#10;    res['app_id']=ICP.get_param('zalo.app_id', default='')" />
+  </component>
+</project>

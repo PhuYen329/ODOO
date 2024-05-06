@@ -1,0 +1,24 @@
+<odoo>
+	<data>
+		<record id="education_school_rule_user" model="ir.rule">
+			<field name="name">
+				School: Only see the school is not private
+			</field>
+			<field name="model_id" ref="model_education_school" />
+			<field name="groups" eval="[(4, ref('viin_education.viin_education_group_user'))]" />
+			<field name="domain_force">
+				[('is_private', '=', False)]
+			</field>
+		</record>
+		<record id="education_school_rule_admin" model="ir.rule">
+			<field name="name">
+				School: See all schools
+			</field>
+			<field name="model_id" ref="model_education_school" />
+			<field name="groups" eval="[(4, ref('viin_education.viin_education_group_admin'))]" />
+			<field name="domain_force">
+				[(1, '=', 1)]
+			</field>
+		</record>
+	</data>
+</odoo>
