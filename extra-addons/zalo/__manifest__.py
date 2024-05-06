@@ -18,6 +18,9 @@
     "data": [
         "security/security_groups.xml",
         "security/ir.model.access.csv",
+        "views/settings_view.xml",
+        "views/zalo_manager.xml"
+        "views/zalo_menu.xml",
         "views/zalo.xml",
     ],
     # only loaded in demonstration mode
