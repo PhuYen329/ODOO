@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-		<record id="zalo_zalo_view_form" model="ir.ui.view">
-			<field name="name">zalo_zalo.view.form</field>
-			<field name="model">zalo.zalo</field>
-			<field name="arch" type="xml">
-				<form string="zalo">
-					<sheet>
-						<group>
-							<field name="zalo_id" />
-						</group>
-					</sheet>
-				</form>
-			</field>
-		</record>
+		
 		<record id="zalo_zalo_view_tree" model="ir.ui.view">
 			<field name="name">zalo_zalo.view.tree</field>
 			<field name="model">zalo.zalo</field>
 			<field name="arch" type="xml">
 				<tree string="zalo">
-					<field name="zalo_id" />
+					<field name="app_id" />
+					<field name="secret_key" />
 				</tree>
 			</field>
 		</record>
-        <record id="zalo_users_action" model="ir.actions.act_window">
+			<!-- acction view -->
+        <record id="zalo_action" model="ir.actions.act_window">
             <field name="name">zalo</field>
             <field name="res_model">zalo.zalo</field>
-            <field name="view_mode">tree,form</field>
+			<field name="view_id" ref="zalo_zalo_view_tree" />
+            <field name="view_mode">tree</field>
         </record>
 		
+		
+		<!-- menu -->
+		<menuitem id="zalo_manager_menu" name="manager" action="zalo_action" parent="zalo_menu" /> 
 	</data>
 </odoo>

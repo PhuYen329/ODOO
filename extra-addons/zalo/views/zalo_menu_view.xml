@@ -8,7 +8,5 @@
             <field name="view_mode">tree,form</field>
         </record>
 		<menuitem id="zalo_menu" name="zalo" sequence="4" />
-		<menuitem id="zalo_manager_menu" name="manager" action="zalo_users_action" parent="zalo_menu" />
-		<menuitem id="zalo_users_menu" name="zalo" action="zalo_users_action" parent="zalo_menu" />
 	</data>
 </odoo>

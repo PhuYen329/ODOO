@@ -5,9 +5,12 @@ from odoo.exceptions import UserError, ValidationError
 
 class zalo(models.Model):
     _name = "zalo.zalo"
-    _description = "zalo.zalo"
+    _inherit = 'res.config.settings'
+    _description = "Prototype inheritance"
 
-    zalo_id = fields.Integer(string="zalo_id")
+    app_id = fields.Char(string='App ID', required=True)
+    secret_key = fields.Char(string='Secret Key', required=True)
+
 
 
 #     @api.depends('value')

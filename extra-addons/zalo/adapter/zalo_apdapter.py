@@ -14,8 +14,8 @@ class ZaloOaAdapter:
         }
         data = {
             'app_id': self.app_id,
-            'ecret_key': self.secret_key,
-            'edirect_uri': self.redirect_uri,
+            'secret_key': self.secret_key,
+            'redirect_uri': self.redirect_uri,
             'grant_type': 'authorization_code'
         }
         response = requests.post('https://openapi.zalo.me/v4/oauth/access_token', headers=headers, data=data)
