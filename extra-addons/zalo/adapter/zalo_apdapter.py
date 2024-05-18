@@ -1,11 +1,12 @@
-import requests
+import request
 import json
 
 class ZaloOaAdapter:
-    def __init__(self, app_id, secret_key, redirect_uri):
+    def __init__(self, app_id, secret_key, redirect_uri,code):
         self.app_id = app_id
         self.secret_key = secret_key
         self.redirect_uri = redirect_uri
+        self.code = code
 
     def get_access_token(self):
         # Thực hiện yêu cầu truy cập token
@@ -16,9 +17,10 @@ class ZaloOaAdapter:
             'app_id': self.app_id,
             'secret_key': self.secret_key,
             'redirect_uri': self.redirect_uri,
-            'grant_type': 'authorization_code'
+            'grant_type': 'authorization_code',
+            'code':self.code
         }
-        response = requests.post('https://openapi.zalo.me/v4/oauth/access_token', headers=headers, data=data)
+        response = request.post('https://openapi.zalo.me/v4/oauth/access_token', headers=headers, data=data)
         access_token = json.loads(response.content)['access_token']
         return access_token
 

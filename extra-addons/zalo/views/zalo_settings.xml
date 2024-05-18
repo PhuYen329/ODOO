@@ -16,6 +16,9 @@
                      <setting string="Secret_key" name="secret_key" id="secret_key">
                         <field name="secret_key" />
                      </setting>
+                     <setting string="Host" name="redirect_uri" id="redirect_uri">
+                        <field name="redirect_uri" />
+                     </setting>
                   </block>
                </app>
             </xpath>
@@ -30,7 +33,8 @@
          <field name="target">inline</field>
          <field name="context">{"module": "zalo"}</field>
       </record>
-      <menuitem id="zalo_config_menu" name="configuration" parent="zalo_menu" />
+      
+      <menuitem id="zalo_config_menu" name="Configuration" parent="zalo_menu" sequence="3" />
       <menuitem id="zalo_settings_menu" name="settings" parent="zalo_config_menu" action="zalo_settings_action" />
    </data>
 </odoo>

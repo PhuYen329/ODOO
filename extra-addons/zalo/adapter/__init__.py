@@ -1,1 +1,1 @@
-from.import zalo_apdapter
+from.import adapter

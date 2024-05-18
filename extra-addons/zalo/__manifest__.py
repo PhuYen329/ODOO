@@ -12,16 +12,16 @@
     "version": "0.1",
     "application": True,
     "auto_install": False,
-
     # any module necessary for this one to work correctly
-    "depends": ["base", "product", "website", "account", "contacts"],
+    "depends": ["base", "product", "website", "account", "contacts", "mail"],
     # always loaded
     "data": [
         "security/security_groups.xml",
         "security/ir.model.access.csv",
         "views/zalo_menu_view.xml",
-        "views/zalo_managers.xml",
         "views/zalo_users.xml",
+        "views/zalo_managers.xml",
+        "view/zalo_contacts.xml",
         "views/zalo_settings.xml",
     ],
     # only loaded in demonstration mode

@@ -39,6 +39,6 @@
 			<field name="res_model">zalo.users</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem id="zalo_users_menu" name="zalo" action="users_action" parent="zalo_menu" />
+		<menuitem id="zalo_users_menu" name="Users" action="users_action" parent="zalo_menu" sequence="2" />
 	</data>
 </odoo>
