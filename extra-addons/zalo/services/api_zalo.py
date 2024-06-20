@@ -30,7 +30,7 @@ class ZaloAPI:
             response.raise_for_status()
             response_data = response.json()
             _logger.debug(f"Response data: {response_data}")
-            return response_data.get("access_token")  # Return the actual access token
+            return response_data # Return the actual access token
         except requests.exceptions.RequestException as e:
             _logger.error(f"Error fetching access token from API: {e}")
             return None
