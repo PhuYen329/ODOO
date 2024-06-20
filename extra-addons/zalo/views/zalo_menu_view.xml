@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-
         <record id="zalo_users_action" model="ir.actions.act_window">
             <field name="name">zalo</field>
             <field name="res_model">zalo.zalo</field>

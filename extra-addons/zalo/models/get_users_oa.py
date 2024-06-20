@@ -4,6 +4,8 @@ class ZaloOaUser(models.Model):
     _name = 'zalo_oa_user'
     _description = 'Zalo OA User'
 
+    # These lines of code are defining fields for the `ZaloOaUser` model in Odoo. Here's what each
+    # field represents:
     user_id = fields.Char(string='User ID', required=True)
     name = fields.Char(string='Name')
     email = fields.Char(string='Email')

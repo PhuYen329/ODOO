@@ -10,7 +10,6 @@
 					<sheet>
 						<group>
 							<field name="users_id" />
-							<field name="name" />
 							<field name="introduces" />
 							<field name="age" />
 							<field name="gender" />
@@ -26,7 +25,6 @@
 			<field name="arch" type="xml">
 				<tree string="users">
 					<field name="users_id" />
-					<field name="name" />
 					<field name="introduces" />
 					<field name="age" />
 					<field name="gender" />

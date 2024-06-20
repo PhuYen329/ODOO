@@ -1,4 +1,5 @@
 version: "3.9"
+
 services:
   web:
     image: odoo:17.0
@@ -6,16 +7,16 @@ services:
       - db
     ports:
       - "8069:8069"
-      - "5678:5678" # for debugging purposes (remote debugger)
+      - "5678:5678"
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./extra-addons:/mnt/extra-addons
     environment:
-      ODOO_DEBUG: "True"  # Cho phép chế độ debug
+      ODOO_DEBUG: "True"
     env_file:
       - env/odoo.env
-    command:  ["--dev", "all", "--log-level=debug"]
+    command: ["--dev", "all", "--log-level=debug"]
     stdin_open: true
     tty: true
     cap_add:
@@ -45,6 +46,24 @@ services:
       - pgadmin-data:/var/lib/pgadmin
     depends_on:
       - db
+
+  nodejs:
+    image: node:20
+    working_dir: /usr/src/app
+    volumes:
+      - ./nodejs:/usr/src/app
+    ports:
+      - "3000:3000"
+    command: "npm start"
+
+  reactjs:
+    image: node:20
+    working_dir: /usr/src/app
+    volumes:
+      - ./reactjs:/usr/src/app
+    ports:
+      - "5000:5000"
+    command: "npm start"
 
 volumes:
   odoo-web-data:

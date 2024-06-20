@@ -3,7 +3,7 @@
    <data>
       <record id="res_config_settings_view_form" model="ir.ui.view">
          <field name="name">res.config.settings.view.form.inherit.sale</field>
-         <field name="model">zalo.zalo</field>
+         <field name="model">res.config.settings</field>
          <field name="inherit_id" ref="base.res_config_settings_view_form" />
          <field name="priority" eval="10" />
          <field name="arch" type="xml">
@@ -14,9 +14,9 @@
                         <field name="app_id" />
                      </setting>
                      <setting string="Secret_key" name="secret_key" id="secret_key">
-                        <field name="secret_key" />
+                        <field name="secret_key"/>
                      </setting>
-                     <setting string="Host" name="redirect_uri" id="redirect_uri">
+                     <setting string="Authorization URL" name="redirect_uri" id="redirect_uri">
                         <field name="redirect_uri" />
                      </setting>
                   </block>
@@ -27,14 +27,13 @@
       <record id="zalo_settings_action" model="ir.actions.act_window">
          <field name="name">zalo settings</field>
          <field name="type">ir.actions.act_window</field>
-         <field name="res_model">zalo.zalo</field>
+         <field name="res_model">res.config.settings</field>
          <field name="view_id" ref="res_config_settings_view_form" />
          <field name="view_mode">form</field>
          <field name="target">inline</field>
          <field name="context">{"module": "zalo"}</field>
       </record>
-      
-      <menuitem id="zalo_config_menu" name="Configuration" parent="zalo_menu" sequence="3" />
+      <menuitem id="zalo_config_menu" name="Configuration" parent="zalo_menu" sequence="4" />
       <menuitem id="zalo_settings_menu" name="settings" parent="zalo_config_menu" action="zalo_settings_action" />
    </data>
 </odoo>

@@ -4,15 +4,17 @@ from odoo.exceptions import UserError, ValidationError
 
 
 class zalo(models.Model):
-    _name = "zalo.zalo"
-    _inherit = 'res.config.settings'
+    _name="zalo.zalo"
     _description = "Prototype inheritance"
 
-    app_id = fields.Char(string="App ID", required=True)
-    secret_key = fields.Char(string="Secret Key", required=True)
-    redirect_uri = fields.Char(string="Host", required=True)
-    
-#     @api.depends('value')
+    # user_id = fields.Char(string='User ID', required=True)
+    # name = fields.Char(string='Name')
+    # email = fields.Char(string='Email')
+    # phone = fields.Char(string='Phone')
+    # avatar = fields.Binary(string='Avatar')
+    #     @api.depends('value')
+
+
 #     def _value_pc(self):
 #         for record in self:
 #             record.value2 = float(record.value) / 100

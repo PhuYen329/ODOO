@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-
-		
 		<record id="zalo_zalo_view_tree" model="ir.ui.view">
 			<field name="name">zalo_zalo.view.tree</field>
 			<field name="model">zalo.zalo</field>
@@ -20,6 +18,5 @@
 		</record>
 		<!-- menu -->
 		<menuitem id="zalo_manager_menu" name="Manager" action="zalo_managers_action" parent="zalo_menu" sequence="1" />
-
 	</data>
 </odoo>

@@ -2,10 +2,11 @@ import request
 import json
 
 class ZaloOaAdapter:
-    def __init__(self, app_id, secret_key, redirect_uri,code):
+    def __init__(self, app_id, secret_key, redirect_uri, oaid ,code):
         self.app_id = app_id
         self.secret_key = secret_key
         self.redirect_uri = redirect_uri
+        self.oaid = oaid
         self.code = code
 
     def get_access_token(self):
@@ -56,3 +57,4 @@ class ZaloOaAdapter:
         endpoint = f'conversations/{user_id}'
         response = self.make_api_call(endpoint)
         return response
+    

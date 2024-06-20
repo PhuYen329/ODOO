@@ -1,0 +1,22 @@
+<odoo>
+    <record id="view_partner_form_inherit_zalo" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.zalo</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Zalo">
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <!-- Định nghĩa action để mở view Contacts -->
+    <record id="contacts_action" model="ir.actions.act_window">
+        <field name="name">contacts</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_id" ref="view_partner_form_inherit_zalo"/>
+        <field name="view_mode">form</field>
+    </record>
+    <!-- Định nghĩa menu để truy cập view Contacts -->
+    <menuitem id="contacts" name="Contacts" parent="zalo_menu" sequence="3" action="contacts_action"/>
+</odoo>

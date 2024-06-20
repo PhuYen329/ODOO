@@ -1,5 +1,13 @@
 <odoo>
     <data>
+      <odoo>
+        <template id="my_template">
+          <head>
+            <script data-main="main" src="require.js"></script>
+            <script type="text/javascript" src="zalo/static/src/js/main.js"></script>
+          </head>
+        </template>
+      </odoo>
 <!--
         <template id="listing">
           <ul>
